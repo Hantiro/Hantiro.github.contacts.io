@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Контакты</title>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src ="js/search.js"></script>
+</head>
+<body>
+<h1>Контакты</h1>
+
+<div class="item button button-default">
+    <div class="field"><input type="submit" id="add" value="Добавить" /></div>
+</div>
+<form class="form">
+    <input class="place_for_search" type="text" id="text-to-find" value="" placeholder="Search" autofocus>
+    <input class="button_for_turn_back" type="button" onclick="javascript: FindOnPage('text-to-find',false); return false;" value="Отменить" title="Отменить поиск">
+    <input class="button_for_search" type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;" value="OK " title="Начать поиск">
+</form>
+
+<table id="contacts-table">
+    <tr id="contacts-head">
+        <th>ID</th>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Email</th>
+        <th>Телефон</th>
+        <th>Действие</th>
+    </tr>
+</table>
+
+<form id="contactsform">
+    <div class="item text">
+        <label>Имя:</label>
+        <div class="field"><input type="text" name="first_name" /></div>
+    </div>
+    <div class="item text">
+        <label>Фамилия:</label>
+        <div class="field"><input type="text" name="last_name" /></div>
+    </div>
+    <div class="item text">
+        <label>Email:</label>
+        <div class="field"><input type="text" name="email" /></div>
+    </div>
+    <div class="item text">
+        <label>Телефон:</label>
+        <div class="field"><input type="text" name="phone" /></div>
+    </div>
+    <div class="button-wrapper">
+        <div class="item button">
+            <div class="field"><input type="button" id="Close" value="Закрыть" /></div>
+        </div>
+        <div class="item button">
+            <div class="field"><input type="button" id="contacts-op-discard" value="Отменить" /></div>
+        </div>
+        <div class="item button button-default">
+            <div class="field"><input type="submit" id="contacts-op-save" value="Сохранить" /></div>
+        </div>
+
+    </div>
+    <input type="hidden" name="id_entry" value="0" />
+</form>
+
+<script src ="js/contacts.js"></script>
+
+</body>
+</html>

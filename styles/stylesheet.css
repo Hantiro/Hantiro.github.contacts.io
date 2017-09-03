@@ -1,0 +1,93 @@
+
+.form{
+    margin-top: 10px;
+
+}
+a {
+    color: #0068D2;
+    cursor: pointer;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: #0068D2;
+}
+a:hover, a:active {
+    text-decoration: underline;
+    color: #0068D2;
+}
+body {
+    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+#contacts-table {
+    border-collapse: collapse;
+}
+#contacts-table, #contacts-table th, #contacts-table td {
+
+    padding: 8px 16px;
+    padding-left: 0px;
+    text-align: left;
+    border: 0px solid #B9BABE;
+}
+#contacts-table th {
+    font-weight: bold;
+    font-size: 14px;
+    color: #29344B;
+}
+#contacts-table td {
+    color: #000;
+}
+#contacts-table tr:nth-child(2n) {
+    background: #E8EDFF;
+}
+
+#contactsform {
+    display: none;
+    padding: 10px;
+}
+.text input, .button input {
+    padding: 5px;
+    margin: 0;
+    border: 1px solid #ccc;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+#contactsform .item {
+    margin: 3px 0;
+}
+#contactsform label, #contactsform .field {
+    display: inline-block;
+    color: #0C0B07;
+}
+#contactsform label {
+    width: 110px;
+    font-weight: bold;
+    text-align: right;
+    color: #666;
+}
+#contactsform .text input {
+    width: 236px;
+    padding: 3px;
+}
+#contactsform .button {
+    display: inline-block;
+}
+#contactsform .button-wrapper {
+    padding-left: 113px;
+}
+.button input {
+    padding: 4px 8px;
+    color: #343434;
+    background-color: #fdfdfd;
+    background: -moz-linear-gradient(#fdfdfd, #e1e1e1);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fdfdfd), to(#e1e1e1));
+}
+.button-default input {
+    font-weight: bold;
+    color: #fff;
+    background-color: #7ca0c7;
+    background: -moz-linear-gradient(#acc6e1, #7ca0c7);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#acc6e1), to(#7ca0c7));
+    border-color: #5b80b2;
+}
